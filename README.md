@@ -1,12 +1,60 @@
-# React + Vite
+# React Stopwatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, user-friendly stopwatch application built with React. This application provides basic timing functionality including start, stop, and reset capabilities with a clean interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Start/Stop functionality
+- Reset timer
+- Display of minutes, seconds, and milliseconds
+- Clean and intuitive user interface
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- useState, useEffect, and useRef hooks
+- JavaScript timing functions
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository or download the source code
+   ```
+   git clone <repository-url>
+   ```
+
+2. Navigate to the project directory
+   ```
+   cd StopWatch-Project
+   ```
+
+3. Install dependencies
+   ```
+   npm install
+   ```
+
+4. Start the development server
+   ```
+   npm start
+   ```
+
+5. Open your browser and visit `http://localhost:3000`
+
+## Usage
+
+- Click the **start** button to begin the stopwatch
+- Click the **stop** button to pause the stopwatch
+- Click the **reset** button to reset the stopwatch to 00:00:00
+
+## How It Works
+
+The stopwatch uses React's state management and effect hooks to track elapsed time. It calculates the difference between the current time and the start time, updating the display every 10 milliseconds when running.
+
+## Demo
+
+[Live Demo](https://stop-watch-project-chi.vercel.app/)
+
+## License
+
+MIT
